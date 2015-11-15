@@ -13,7 +13,7 @@
   font-family: "genNormal";
   src: url("font/SourceHanSansJP-Normal.woff") format("woff");
 }
-
+ 
 @font-face {
   font-family: "genRegular";
   src: url("font/SourceHanSansJP-Regular.woff") format("woff");

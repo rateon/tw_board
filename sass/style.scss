@@ -1,0 +1,448 @@
+// webフォント -源ノ角ゴシック-
+@font-face {font-family:"genExtraLight"; src: url("font/SourceHanSansJP-ExtraLight.woff") format('woff');}
+@font-face {font-family:"genLight"; src: url("font/SourceHanSansJP-Light.woff") format('woff');}
+@font-face {font-family:"genNormal"; src: url("font/SourceHanSansJP-Normal.woff") format('woff'); }
+@font-face {font-family:"genRegular"; src: url("font/SourceHanSansJP-Regular.woff") format('woff');}
+@font-face {font-family:"genMedium"; src: url("font/SourceHanSansJP-Medium.woff") format('woff'); }
+@font-face {font-family:"genBold"; src: url("font/SourceHanSansJP-Bold.woff") format('woff');}
+@font-face {font-family:"genHeavy"; src: url("font/SourceHanSansJP-Heavy.woff") format('woff');}
+// sidecon back
+$cb1:#1b1b1b;
+// side list back
+$cb3:#313131;
+$cb4:#434343;
+$cb7:#737373;//hover
+// side proj line
+$lb1:#434343;
+$lb2:#000000;
+$lb4:#737373;
+// border line
+$cb5:#a9a9a9;
+// main list back
+$ls1:#eaeaea;
+$ls2:#f5f5f5;
+// toparea line
+$ls3:#eeeeee;
+$ls4:#c3c3c3;
+// link
+$link:#3300a9;
+$hover:#ff0044;
+$h1:#ff0044;
+//3a44eb
+// font
+$fexl:"genExtraLight", sans-serif;
+$fli:"genLight", sans-serif;
+$fno:"genNormal", sans-serif;
+$freg:"genRegular", sans-serif;
+$fmed:"genMedium", sans-serif;
+$fbold:"genBold", sans-serif;
+$fheav:"genHeavy", sans-serif;
+// line default set
+
+
+html{
+  font-family:$fno, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size:13px;
+}
+html,body{height:100%;}
+body{
+  height:100%;
+  background: -webkit-gradient(linear, right, left, color-stop(0.50, #000), color-stop(0.50, $ls1));
+  background: -webkit-linear-gradient(left, $ls1 50%, #000 50%);
+  background: -moz-linear-gradient(left, $ls1 50%, #000 50%);
+  background: -o-linear-gradient(left, $ls1 50%, #000 50%);
+  background: -ms-linear-gradient(left, $ls1 50%, #000 50%);
+  background: linear-gradient(to right, $ls1 50%, #000 50%);
+}
+#bodyArea{
+  display:table;
+  background:#fff;
+  width:965px;
+  margin:0 auto;
+  height:100%;
+}
+h1{
+  font-size:36px;font-family:$fbold;
+  a{color:$h1;}
+}
+h2{font-size:24px;font-family:$fmed;padding:15px 0;}
+a{text-decoration:none;color:$link;}
+a:hover{color:$hover;}
+ul{list-style:none;font-size:0;}
+li{font-size:13px;}
+nav{
+  position:relative;
+  li{
+    display:inline-block;
+    padding:10px 20px;
+    a{color:#000;}
+  }
+}
+header{height:auto;}
+#topArea{
+  padding:20px 0;
+  &::after{
+    display:block;
+    content:"";
+    width:100%;
+    height:1px;
+    background:$ls3;
+    box-shadow:0 -1px 0 $ls4;
+  }
+  .section{
+    nav{padding:20px 0;}
+  }
+  .search{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    height:23px;
+    form{
+      input{border:solid 1px;}
+    }
+  }
+}
+.navlist{
+  position:relative;
+  nav{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:13px;
+    ul{
+      li{padding:0 10px;}
+    }
+    .select,.bold{font-family:$fbold;}
+  }
+  &.noh2{
+    height:24px;
+    padding:15px 0;
+  }
+  .projchange{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:23px;
+  }
+}
+.min{font-size:10px;display:inline-block;color:$cb7;}
+/* input set */
+input[type="text"],input[type="submit"],input[type="password"],input[type="email"],textarea{
+  border:solid 1px $cb3;
+  line-height:1;
+  font-size:13px;
+}
+input[type="email"]{
+  height:21px;
+}
+input[type="password"]{
+  height:19px;
+}
+input[type="text"]{
+  height:21px;
+  padding:0 5px;
+}
+input[type="submit"]{
+  height:23px;
+  padding:0 15px;
+  background:#fff;
+  cursor:pointer;
+}
+label{font-size:13px;}
+
+.filebtn{}
+input[type="file"]{
+  font-size:12px;
+}
+#ContentArea,#sideArea{display:table-cell;}
+#ContentArea{
+  position:relative;
+  padding:0 40px;
+  width:609px;
+  height:100%;
+}
+#mainContent{
+  width:100%;
+  // toppage
+  .threList{
+    display:inline-block;
+    border:solid 1px $cb5;
+    .num{width:30px;text-align:center;}
+    .title{width:292px;}
+    .res{width:38px;text-align:center;}
+    .date{width:110px;}
+    .name{width:50px;text-align:center;}
+    .stat{width:72px;}
+    .listhead,.listcon{
+      padding:10px 0;
+      >div{display:inline-block;}
+    }
+    .listhead{background:#fff;}
+    .listcon{
+      background:$ls2;
+      &:nth-child(2n+2){background:$ls1;}
+      &:hover{background:#fff;}
+    }
+  }
+  // thread page
+  .Thread{
+    .pageend,.pagetop{
+      text-align:right;
+      padding:10px 0;
+      a{display:inline-block;}
+    }
+    // textbox padding
+    $tside:8px;
+    $tverti:12px;
+    $textbox:$tverti $tside;
+    .threhead,.threcon,.rescon{
+      border:solid 0px;
+      +.threcon,+.rescon{
+        margin:20px 0 0;
+      }
+      .headline{
+        background:$ls1;
+        padding:10px;
+        font-size:0;
+        >div{
+          display:inline-block;
+          font-size:13px;
+          border-left:1px solid $ls4;
+          padding:0 11px 0 10px;
+          &:first-child{padding:0 10px 0 0;border:none;}
+        }
+        .num{width:24px;text-align:center;}
+        .name{width:auto;}
+        .title{width:auto;max-width:477px;font-family:$fbold;}
+      }
+      .textarea{
+        background:$ls1;
+        margin:2px 0 0;
+        padding:4px;
+        >p{
+          position:relative;
+          background:#fff;
+          padding:$textbox;
+          min-height:75px;
+        }
+        .thredate{
+          position:absolute;
+          bottom:$tverti;
+          left:$tside;
+          font-size:10px;
+          color:$cb7;
+        }
+      }
+      .bottomline{
+        margin:10px 0 6px;
+        .right{
+          font-size:0;
+          text-align:right;
+          input{
+            font-family:$fli;
+            font-size:12px;
+            margin:0 0 0 4px;
+            &[type="password"]{width:100px;}
+          }
+          &::after{clear:right;}
+        }
+      }
+    }
+    .rescon{
+      .textarea{
+        .text{
+          display:flex;
+          position:relative;
+          >.files{
+            width:30%;
+            border-left:solid 1px $ls1;
+            p{
+              padding:5px 0;
+              &:first-child{padding:0 0 5px;}
+              .filename{
+                display:inline-block;
+                font-size:11px;
+                font-family:$fli;
+                color:$cb7;
+              }
+            }
+          }
+          >p{width:70%}
+          >p,>.files{
+            display:inline-block;
+            padding:$textbox;
+            min-height:75px;
+            background:#fff;
+          }
+        }
+      }
+    }
+  }
+  .Response{
+    margin-top:40px;
+    padding-bottom:40px;
+    h3{
+      font-family:$fmed;
+      font-size: 16px;
+      padding: 18px 9px;
+    }
+    &::before{
+      content:"";
+      display:block;
+      height:1px;
+      width:100%;
+      background:$ls3;
+      box-shadow:0 -1px 0 $ls4;
+    }
+  }
+  .formarea{
+    form{
+      font-size:0;
+      >*{
+        font-size:13px;
+        padding:0 7px;
+        dd,dt{padding:2px;}
+      }
+    }
+    .formleft,.formright{
+      display:inline-block;
+      width:47.7%;
+      max-width:305px;
+      vertical-align:top;
+      input[type="text"]{
+        padding:1px;
+      }
+      input{
+        width:99.3%;
+      }
+    }
+    .formleft{
+      dl{margin:3px 0;}
+    }
+    .formright{
+      padding-top:8px;
+      dl{padding:10px 0;}
+      dt,dd{
+        display:inline-block;
+        vertical-align:middle;
+      }
+    }
+    .formbottom{
+      padding:2px;
+      margin-top:6px;
+      input[type="submit"]{
+        float:right;
+        &::after{clear:right;}
+      }
+    }
+    textarea{
+      height:100px;
+      width:99.4%;
+    }
+  }
+}
+#sideArea{
+  position:relative;
+  background:#000;
+  color:#fff;
+  height:100%;
+  vertical-align:top;
+}
+#sideContent{
+  position:fixed;
+  background:$cb1;
+  padding:10px;
+  width:296px;
+  .sideList{
+    padding:10px 0;
+    .listhead,.listcon{
+      padding:5px 0;
+      background:$cb3;
+      >div{display:inline-block;}
+    }
+    .listhead{}
+    .listcon{
+      &:nth-child(2n+2){background:$cb4;}
+      &:hover{background:$cb7;}
+    }
+    .num{width:30px;text-align:center;}
+    .title{width:188px;}
+    .date{width:72px;}
+  }
+  >.projDeti{margin:8px 0 0;}
+  .projDeti{
+    position:relative;
+    padding:10px 0;
+    &::before{
+      position:absolute;
+      left:0;
+      right:0;
+      top:-3px;
+      border-top:1px solid $lb1;
+      border-bottom:1px solid $lb2;
+      box-shadow:0 -1px 0 $lb2,0 1px 0 $lb1;
+      content:"";
+      display:block;
+      margin:0 auto;
+      height:6px;
+      width:9%;
+    }
+    &::after{
+      position:absolute;
+      top:0;
+      background:$lb2;
+      box-shadow:0 1px $lb1;
+      content:"";
+      display:block;
+      height:1px;
+      width:100%;
+    }
+    h3{
+      font-size:18px;
+      padding:10px;
+    }
+    .box{
+      font-family:$fbold;
+      position:relative;
+      margin:10px 0;
+      border:solid 1px $lb4;
+      border-right:none;
+      box-shadow:-1px 0 0 $lb2,0 -1px 0 $lb2;
+      .cdate{
+        position:absolute;
+        right:14px;
+        background:$cb1;
+        padding:0 5px;
+        &.first{
+          top:-8px;
+        }
+      }
+      .middle{
+        position:relative;
+        .cdate{
+          bottom:-6px;
+        }
+        .cname{
+          &::after{
+            display:block;
+            content:"";
+            background:$lb4;
+            height:1px;
+            width:100%;
+            box-shadow: 0 -1px 0 $lb2;
+          }
+          p{padding:15px 10px;}
+        }
+        &.last{
+          height:42px;
+        }
+      }
+    }
+  }
+}

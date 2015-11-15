@@ -1,0 +1,636 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "genExtraLight";
+  src: url("font/SourceHanSansJP-ExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genLight";
+  src: url("font/SourceHanSansJP-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genNormal";
+  src: url("font/SourceHanSansJP-Normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genRegular";
+  src: url("font/SourceHanSansJP-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genMedium";
+  src: url("font/SourceHanSansJP-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genBold";
+  src: url("font/SourceHanSansJP-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "genHeavy";
+  src: url("font/SourceHanSansJP-Heavy.woff") format("woff");
+}
+
+html {
+  font-family: "genNormal", sans-serif, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 13px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: -webkit-gradient(linear, right, left, color-stop(0.5, #000), color-stop(0.5, #eaeaea));
+  background: -webkit-linear-gradient(left, #eaeaea 50%, #000 50%);
+  background: -moz-linear-gradient(left, #eaeaea 50%, #000 50%);
+  background: -o-linear-gradient(left, #eaeaea 50%, #000 50%);
+  background: -ms-linear-gradient(left, #eaeaea 50%, #000 50%);
+  background: linear-gradient(to right, #eaeaea 50%, #000 50%);
+}
+
+#bodyArea {
+  display: table;
+  background: #fff;
+  width: 965px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "genBold", sans-serif;
+}
+
+h1 a {
+  color: #ff0044;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "genMedium", sans-serif;
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3300a9;
+}
+
+a:hover {
+  color: #ff0044;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+}
+
+li {
+  font-size: 13px;
+}
+
+nav {
+  position: relative;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav li a {
+  color: #000;
+}
+
+header {
+  height: auto;
+}
+
+#topArea {
+  padding: 20px 0;
+}
+
+#topArea::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  box-shadow: 0 -1px 0 #c3c3c3;
+}
+
+#topArea .section nav {
+  padding: 20px 0;
+}
+
+#topArea .search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 23px;
+}
+
+#topArea .search form input {
+  border: solid 1px;
+}
+
+.navlist {
+  position: relative;
+}
+
+.navlist nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 13px;
+}
+
+.navlist nav ul li {
+  padding: 0 10px;
+}
+
+.navlist nav .select, .navlist nav .bold {
+  font-family: "genBold", sans-serif;
+}
+
+.navlist.noh2 {
+  height: 24px;
+  padding: 15px 0;
+}
+
+.navlist .projchange {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 23px;
+}
+
+.min {
+  font-size: 10px;
+  display: inline-block;
+  color: #737373;
+}
+
+/* input set */
+input[type="text"], input[type="submit"], input[type="password"], input[type="email"], textarea {
+  border: solid 1px #313131;
+  line-height: 1;
+  font-size: 13px;
+}
+
+input[type="email"] {
+  height: 21px;
+}
+
+input[type="password"] {
+  height: 19px;
+}
+
+input[type="text"] {
+  height: 21px;
+  padding: 0 5px;
+}
+
+input[type="submit"] {
+  height: 23px;
+  padding: 0 15px;
+  background: #fff;
+  cursor: pointer;
+}
+
+label {
+  font-size: 13px;
+}
+
+input[type="file"] {
+  font-size: 12px;
+}
+
+#ContentArea, #sideArea {
+  display: table-cell;
+}
+
+#ContentArea {
+  position: relative;
+  padding: 0 40px;
+  width: 609px;
+  height: 100%;
+}
+
+#mainContent {
+  width: 100%;
+}
+
+#mainContent .threList {
+  display: inline-block;
+  border: solid 1px #a9a9a9;
+}
+
+#mainContent .threList .num {
+  width: 30px;
+  text-align: center;
+}
+
+#mainContent .threList .title {
+  width: 292px;
+}
+
+#mainContent .threList .res {
+  width: 38px;
+  text-align: center;
+}
+
+#mainContent .threList .date {
+  width: 110px;
+}
+
+#mainContent .threList .name {
+  width: 50px;
+  text-align: center;
+}
+
+#mainContent .threList .stat {
+  width: 72px;
+}
+
+#mainContent .threList .listhead, #mainContent .threList .listcon {
+  padding: 10px 0;
+}
+
+#mainContent .threList .listhead > div, #mainContent .threList .listcon > div {
+  display: inline-block;
+}
+
+#mainContent .threList .listhead {
+  background: #fff;
+}
+
+#mainContent .threList .listcon {
+  background: #f5f5f5;
+}
+
+#mainContent .threList .listcon:nth-child(2n+2) {
+  background: #eaeaea;
+}
+
+#mainContent .threList .listcon:hover {
+  background: #fff;
+}
+
+#mainContent .Thread .pageend, #mainContent .Thread .pagetop {
+  text-align: right;
+  padding: 10px 0;
+}
+
+#mainContent .Thread .pageend a, #mainContent .Thread .pagetop a {
+  display: inline-block;
+}
+
+#mainContent .Thread .threhead, #mainContent .Thread .threcon, #mainContent .Thread .rescon {
+  border: solid 0px;
+}
+
+#mainContent .Thread .threhead + .threcon, #mainContent .Thread .threhead + .rescon, #mainContent .Thread .threcon + .threcon, #mainContent .Thread .threcon + .rescon, #mainContent .Thread .rescon + .threcon, #mainContent .Thread .rescon + .rescon {
+  margin: 20px 0 0;
+}
+
+#mainContent .Thread .threhead .headline, #mainContent .Thread .threcon .headline, #mainContent .Thread .rescon .headline {
+  background: #eaeaea;
+  padding: 10px;
+  font-size: 0;
+}
+
+#mainContent .Thread .threhead .headline > div, #mainContent .Thread .threcon .headline > div, #mainContent .Thread .rescon .headline > div {
+  display: inline-block;
+  font-size: 13px;
+  border-left: 1px solid #c3c3c3;
+  padding: 0 11px 0 10px;
+}
+
+#mainContent .Thread .threhead .headline > div:first-child, #mainContent .Thread .threcon .headline > div:first-child, #mainContent .Thread .rescon .headline > div:first-child {
+  padding: 0 10px 0 0;
+  border: none;
+}
+
+#mainContent .Thread .threhead .headline .num, #mainContent .Thread .threcon .headline .num, #mainContent .Thread .rescon .headline .num {
+  width: 24px;
+  text-align: center;
+}
+
+#mainContent .Thread .threhead .headline .name, #mainContent .Thread .threcon .headline .name, #mainContent .Thread .rescon .headline .name {
+  width: auto;
+}
+
+#mainContent .Thread .threhead .headline .title, #mainContent .Thread .threcon .headline .title, #mainContent .Thread .rescon .headline .title {
+  width: auto;
+  max-width: 477px;
+  font-family: "genBold", sans-serif;
+}
+
+#mainContent .Thread .threhead .textarea, #mainContent .Thread .threcon .textarea, #mainContent .Thread .rescon .textarea {
+  background: #eaeaea;
+  margin: 2px 0 0;
+  padding: 4px;
+}
+
+#mainContent .Thread .threhead .textarea > p, #mainContent .Thread .threcon .textarea > p, #mainContent .Thread .rescon .textarea > p {
+  position: relative;
+  background: #fff;
+  padding: 12px 8px;
+  min-height: 75px;
+}
+
+#mainContent .Thread .threhead .textarea .thredate, #mainContent .Thread .threcon .textarea .thredate, #mainContent .Thread .rescon .textarea .thredate {
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+  font-size: 10px;
+  color: #737373;
+}
+
+#mainContent .Thread .threhead .bottomline, #mainContent .Thread .threcon .bottomline, #mainContent .Thread .rescon .bottomline {
+  margin: 10px 0 6px;
+}
+
+#mainContent .Thread .threhead .bottomline .right, #mainContent .Thread .threcon .bottomline .right, #mainContent .Thread .rescon .bottomline .right {
+  font-size: 0;
+  text-align: right;
+}
+
+#mainContent .Thread .threhead .bottomline .right input, #mainContent .Thread .threcon .bottomline .right input, #mainContent .Thread .rescon .bottomline .right input {
+  font-family: "genLight", sans-serif;
+  font-size: 12px;
+  margin: 0 0 0 4px;
+}
+
+#mainContent .Thread .threhead .bottomline .right input[type="password"], #mainContent .Thread .threcon .bottomline .right input[type="password"], #mainContent .Thread .rescon .bottomline .right input[type="password"] {
+  width: 100px;
+}
+
+#mainContent .Thread .threhead .bottomline .right::after, #mainContent .Thread .threcon .bottomline .right::after, #mainContent .Thread .rescon .bottomline .right::after {
+  clear: right;
+}
+
+#mainContent .Thread .rescon .textarea .text {
+  display: flex;
+  position: relative;
+}
+
+#mainContent .Thread .rescon .textarea .text > .files {
+  width: 30%;
+  border-left: solid 1px #eaeaea;
+}
+
+#mainContent .Thread .rescon .textarea .text > .files p {
+  padding: 5px 0;
+}
+
+#mainContent .Thread .rescon .textarea .text > .files p:first-child {
+  padding: 0 0 5px;
+}
+
+#mainContent .Thread .rescon .textarea .text > .files p .filename {
+  display: inline-block;
+  font-size: 11px;
+  font-family: "genLight", sans-serif;
+  color: #737373;
+}
+
+#mainContent .Thread .rescon .textarea .text > p {
+  width: 70%;
+}
+
+#mainContent .Thread .rescon .textarea .text > p, #mainContent .Thread .rescon .textarea .text > .files {
+  display: inline-block;
+  padding: 12px 8px;
+  min-height: 75px;
+  background: #fff;
+}
+
+#mainContent .Response {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+#mainContent .Response h3 {
+  font-family: "genMedium", sans-serif;
+  font-size: 16px;
+  padding: 18px 9px;
+}
+
+#mainContent .Response::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #eeeeee;
+  box-shadow: 0 -1px 0 #c3c3c3;
+}
+
+#mainContent .formarea form {
+  font-size: 0;
+}
+
+#mainContent .formarea form > * {
+  font-size: 13px;
+  padding: 0 7px;
+}
+
+#mainContent .formarea form > * dd, #mainContent .formarea form > * dt {
+  padding: 2px;
+}
+
+#mainContent .formarea .formleft, #mainContent .formarea .formright {
+  display: inline-block;
+  width: 47.7%;
+  max-width: 305px;
+  vertical-align: top;
+}
+
+#mainContent .formarea .formleft input[type="text"], #mainContent .formarea .formright input[type="text"] {
+  padding: 1px;
+}
+
+#mainContent .formarea .formleft input, #mainContent .formarea .formright input {
+  width: 99.3%;
+}
+
+#mainContent .formarea .formleft dl {
+  margin: 3px 0;
+}
+
+#mainContent .formarea .formright {
+  padding-top: 8px;
+}
+
+#mainContent .formarea .formright dl {
+  padding: 10px 0;
+}
+
+#mainContent .formarea .formright dt, #mainContent .formarea .formright dd {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#mainContent .formarea .formbottom {
+  padding: 2px;
+  margin-top: 6px;
+}
+
+#mainContent .formarea .formbottom input[type="submit"] {
+  float: right;
+}
+
+#mainContent .formarea .formbottom input[type="submit"]::after {
+  clear: right;
+}
+
+#mainContent .formarea textarea {
+  height: 100px;
+  width: 99.4%;
+}
+
+#sideArea {
+  position: relative;
+  background: #000;
+  color: #fff;
+  height: 100%;
+  vertical-align: top;
+}
+
+#sideContent {
+  position: fixed;
+  background: #1b1b1b;
+  padding: 10px;
+  width: 296px;
+}
+
+#sideContent .sideList {
+  padding: 10px 0;
+}
+
+#sideContent .sideList .listhead, #sideContent .sideList .listcon {
+  padding: 5px 0;
+  background: #313131;
+}
+
+#sideContent .sideList .listhead > div, #sideContent .sideList .listcon > div {
+  display: inline-block;
+}
+
+#sideContent .sideList .listcon:nth-child(2n+2) {
+  background: #434343;
+}
+
+#sideContent .sideList .listcon:hover {
+  background: #737373;
+}
+
+#sideContent .sideList .num {
+  width: 30px;
+  text-align: center;
+}
+
+#sideContent .sideList .title {
+  width: 188px;
+}
+
+#sideContent .sideList .date {
+  width: 72px;
+}
+
+#sideContent > .projDeti {
+  margin: 8px 0 0;
+}
+
+#sideContent .projDeti {
+  position: relative;
+  padding: 10px 0;
+}
+
+#sideContent .projDeti::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -3px;
+  border-top: 1px solid #434343;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 -1px 0 #000000, 0 1px 0 #434343;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  height: 6px;
+  width: 9%;
+}
+
+#sideContent .projDeti::after {
+  position: absolute;
+  top: 0;
+  background: #000000;
+  box-shadow: 0 1px #434343;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+}
+
+#sideContent .projDeti h3 {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#sideContent .projDeti .box {
+  font-family: "genBold", sans-serif;
+  position: relative;
+  margin: 10px 0;
+  border: solid 1px #737373;
+  border-right: none;
+  box-shadow: -1px 0 0 #000000, 0 -1px 0 #000000;
+}
+
+#sideContent .projDeti .box .cdate {
+  position: absolute;
+  right: 14px;
+  background: #1b1b1b;
+  padding: 0 5px;
+}
+
+#sideContent .projDeti .box .cdate.first {
+  top: -8px;
+}
+
+#sideContent .projDeti .box .middle {
+  position: relative;
+}
+
+#sideContent .projDeti .box .middle .cdate {
+  bottom: -6px;
+}
+
+#sideContent .projDeti .box .middle .cname::after {
+  display: block;
+  content: "";
+  background: #737373;
+  height: 1px;
+  width: 100%;
+  box-shadow: 0 -1px 0 #000000;
+}
+
+#sideContent .projDeti .box .middle .cname p {
+  padding: 15px 10px;
+}
+
+#sideContent .projDeti .box .middle.last {
+  height: 42px;
+}
